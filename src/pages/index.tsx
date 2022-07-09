@@ -39,7 +39,7 @@ const Home: NextPage = () => {
       <div className="p-8 flex flex-col gap-4">
         <h1 className="text-2xl">Ordenes</h1>
         {orders.data?.map((order) => (
-          <div className="p-2 rounded-md bg-brand-grey">
+          <div key={order.id} className="p-2 rounded-md bg-brand-grey">
             <div className="p-2 round-full  text-brand-blue">{order.name}</div>
             <div className="p-2 round-full  text-brand-blue">
               {order.description}
